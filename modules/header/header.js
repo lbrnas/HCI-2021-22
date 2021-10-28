@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import LogoImg from '../../assets/logo.png';
 import HeroImg from '../../assets/hero.png';
+import Navbar from '../../components/navbar';
 
 const Header = () => {
     return (
@@ -24,26 +25,7 @@ const Header = () => {
                         height={150}
                         alt="Design logo"
                     />
-                    <nav className="inline-flex justify-between list-none w-max">
-                        <li className="w-36 py-4 font-bold text-2xl text-center text-white bg-purple-900">
-                            Home
-                        </li>
-                        <li className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900">
-                            About Us
-                        </li>
-                        <li className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900">
-                            Showcase
-                        </li>
-                        <li className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900">
-                            Blog
-                        </li>
-                        <li className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900">
-                            Contact
-                        </li>
-                        <li className="w-36 py-4 font-normal text-2xl text-center text-purple-900 hover:text-white hover:bg-purple-900">
-                            Sign In
-                        </li>
-                    </nav>
+                    <Navbar />
                 </section>
                 <section className="mt-14">
                     <h1 className="h-20 m-0 mb-1 font-bold text-7xl text-purple-800">
